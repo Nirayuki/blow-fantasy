@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://bii4kub0l7q3a"]
+
+[ext_resource type="Texture2D" uid="uid://c8i7fchbjairc" path="res://Assets/objects/objects.png" id="1_4epe1"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v74w5"]
+resource_name = "Objects"
+texture = ExtResource("1_4epe1")
+0:5/size_in_atlas = Vector2i(3, 4)
+0:5/0 = 0
+0:5/0/texture_origin = Vector2i(0, 18)
+0:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:5/0/physics_layer_0/angular_velocity = 0.0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10.25, -5.25, 8, -5.25, 11, 2, 9.5, 8.5, -8, 8, -11.75, 3.75)
+8:6/size_in_atlas = Vector2i(2, 3)
+8:6/0 = 0
+8:6/0/texture_origin = Vector2i(0, 13)
+8:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:6/0/physics_layer_0/angular_velocity = 0.0
+8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -0.125, -0.25, -1.875, 8, 0.625, 6.125, 6.875, 4, 8, -5, 8, -6.5, 5.125, -8, 2.75)
+6:7/size_in_atlas = Vector2i(2, 2)
+6:7/0 = 0
+6:7/0/texture_origin = Vector2i(0, 5)
+6:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:7/0/physics_layer_0/angular_velocity = 0.0
+6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10.25, -5.25, 9.75, -5.375, 16.125, 2.25, 10.25, 9.625, -11.5, 9.125, -16.25, 4.375, -13.125, -2.125)
+10:7/size_in_atlas = Vector2i(2, 2)
+10:7/0 = 0
+10:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:7/0/physics_layer_0/angular_velocity = 0.0
+10:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.12652, -8, 4.24264, -8, 6.54074, -8, 10.0763, -1.06066, 12.5511, 3.00521, 10.4298, 9.8995, 0.176775, 9.54594, -6.18719, 10.7834, -8, 8, -12.9047, 5.3033, -12.0208, 1.94454, -12.7279, -0.707107)
+11:2/size_in_atlas = Vector2i(1, 2)
+11:2/0 = 0
+11:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:2/0/physics_layer_0/angular_velocity = 0.0
+10:0/0 = 0
+10:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:0/0/physics_layer_0/angular_velocity = 0.0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 4.625, -1.76777, 4.77297, -2, 6.625, -6.75, 6.625, -8, 3.18198)
+11:0/0 = 0
+11:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:0/0/physics_layer_0/angular_velocity = 0.0
+11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 4.5, 6.625, 4.75, 6.75, 7, 2.375, 6.625, 2.25, 4.625, -8, 4.625)
+5:0/0 = 0
+5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.83363, -5.48008, 5.83363, -5.83363, 5.83363, 2.12132, 1.23744, 2.65165, 1.41422, 4.94975, -2.12132, 4.77297, -1.94454, 2.82843, -6.01041, 2.47487)
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-1.94454, -8, 4.41942, -6.01041, 6.36396, -1.41422, 6.01041, 8, -2.65165, 8, -4.59619, 4.94975, -8, 3.53553, -8, 0.353552)
+
+[sub_resource type="TileSet" id="TileSet_k75nt"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+terrain_set_0/mode = 0
+sources/0 = SubResource("TileSetAtlasSource_v74w5")
+
+[node name="object_tilemap" type="TileMap"]
+y_sort_enabled = true
+tile_set = SubResource("TileSet_k75nt")
+format = 2
+layer_0/y_sort_enabled = true

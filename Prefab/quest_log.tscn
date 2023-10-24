@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://kvm8uuoosmi8"]
+
+[node name="QuestLog" type="CanvasLayer"]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.025
+anchor_top = 0.022
+anchor_right = 0.144
+anchor_bottom = 1.022
+offset_top = 0.0399997
+offset_right = -0.0800018
+offset_bottom = 0.0399933
+grow_vertical = 2
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Label 2"
